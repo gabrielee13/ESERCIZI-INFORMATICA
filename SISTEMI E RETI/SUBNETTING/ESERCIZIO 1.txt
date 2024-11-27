@@ -1,0 +1,25 @@
+192.168.7.0  indirizzo di classe C
+
+Subnet mask default: 255.255.255.0
+
+2^n>=2	n=1
+
+Subnet mask in binario: 11111111.11111111.11111111.10000000
+
+Ultimo Ottetto: 10000000-->128
+
+Subnet mask finale=255.255.255.128
+
+Calcolo intervalli (n)= 256/2=128
+		        
+		        Intervallo 1: 192.168.7.0 a 192.168.7.127 /25		Indirizzo di rete è il primo, l'indirizzo di brodcast è l'ultimo
+
+			Intervallo 2: 192.168.7.128 a 192.168.7.256 /25		Indirizzo di rete è il primo, l'indirizzo di brodcast è l'ultimo
+
+Calcolo numero di host per sottorete: 2^n-2=126	n=bit lasciati agli host nell'ultimo ottetto, 7	
+
+
+
+
+
+

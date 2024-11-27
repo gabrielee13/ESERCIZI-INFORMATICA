@@ -1,0 +1,39 @@
+@echo off
+set /P primaScelta="Inserire il nome del primo file"
+set /P secondaScelta="Inserire il nome del secondo file"
+if EXIST %primaScelta% if EXIST %secondaScelta% goto copia
+else goto errore 
+:copia
+copy %primaScelta% %secondaScelta%
+echo "Primo file copiato nel secondo"
+:errore
+echo "Uno dei due parametri non esiste, programma finito"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

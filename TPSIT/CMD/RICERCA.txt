@@ -1,0 +1,4 @@
+@echo off
+cls
+set /P file1="inserisci il nome del file"
+set /P file2="inserisci il nome del secondo file"
