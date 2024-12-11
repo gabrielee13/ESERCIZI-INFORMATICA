@@ -12,15 +12,16 @@ public class App {
 
         System.out.println("Inserire il numero double: ");
         f=leggi.nextFloat();
-
+        
         leggi.nextLine();
         System.out.println("Inserire la stringa: ");
         
         s=leggi.nextLine(); 
         leggi.close();
-
+        
         System.out.println(s);
         System.out.println(f);
         System.out.println(n);
+
     }
 }

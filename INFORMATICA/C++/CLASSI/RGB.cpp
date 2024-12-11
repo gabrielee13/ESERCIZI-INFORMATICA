@@ -12,35 +12,49 @@ class Colore{
 		int g;
 		int b;
 		
-	private:
+	public:
 		
 		Colore(int r, int g, int b){
 			this->r=r;
 			this->g=g;
 			this->b=b;			
 		}
+		
 		Colore(){
 			this->r=255;
 			this->g=255;
 			this->b=255;
 		}
+		
 		double misuraIntensita(){
 			double media=(this->r+this->g+this->b)/3;
 			return media;
 		}
 		
-		Colore operator == (Colore const& obj){
-			if(this->misuraIntensita()==obj.misuraIntensita()) return true;
-			return false;
+		bool operator==(const Colore& obj){
+			if(this->r != obj.r) return false;
+			if(this->g != obj.g) return false;
+			if(this->b != obj.b) return false;
+			return true;
 		}
 
-		
-	
 };
 
 int main(){
 	
+	Colore* colore1=new Colore(); // bianco
+	Colore* colore2=new Colore(128,168,98); 
 	
+	double intensita1=colore1->misuraIntensita();
+	double intensita2=colore2->misuraIntensita();
 	
+	if(*colore1==*colore2){
+		cout << "Uguali" << endl;
+	}
+	else{
+		cout << "Diversi" << endl;
+	}
+	
+	system("pause");
 	return 0;
 }
